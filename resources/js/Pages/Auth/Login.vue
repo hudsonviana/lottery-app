@@ -1,8 +1,7 @@
 <template>
   <div>
-    <Link href="/login">Login</Link>
-    <h1>Brasil, {{ testando }}</h1>
-    <a href="/login">Login Anchor</a>
+    <Link href="/home">Home</Link>
+    <h1>Login Page {{ testando }}</h1>
   </div>
 </template>
 
@@ -13,7 +12,6 @@ export default {
   props: {
     testando: String,
   },
-
   components: {
     Link,
   },

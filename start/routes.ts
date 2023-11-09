@@ -9,3 +9,7 @@ Route.get('/home', async ({ inertia }) => {
     testando: 'Como vai você?',
   });
 });
+
+Route.get('/login', async ({ inertia }) => {
+  return inertia.render('Auth/Login');
+});
