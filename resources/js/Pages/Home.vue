@@ -1,10 +1,7 @@
 <template>
   <div>
     <Link href="/login">Login</Link>
-    <h1>Brasil, {{ testando }}</h1>
-    <div id="resultado">Contagem de cliques: 0</div>
-    <!-- <button @click="exibirMensagem">Mensagem</button> -->
-    <button @click="incrementaContagem">Mensagem</button>
+    <h1 class="text-red-500">Brasil, {{ testando }}</h1>
   </div>
 </template>
 
@@ -17,21 +14,6 @@ export default {
   },
   components: {
     Link,
-  },
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {
-    exibirMensagem() {
-      alert('Mensagem: HOME');
-    },
-    incrementaContagem() {
-      this.count++;
-      const divResultado = document.querySelector('#resultado');
-      divResultado.innerText = `Contagem de cliques: ${this.count}`;
-    },
   },
 };
 </script>
